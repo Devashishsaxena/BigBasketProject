@@ -1,24 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
-
+import Bigbasket from './component/Bigbasket/Bigbasket';
+import Productpage from './component/productPage/Productpage';
+import Productdetails from './component/productDetails/Productdetails';
+import Createproduct from './component/createProduct/Createproduct';
+import Updateproduct from './component/updateProduct/Updateproduct';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Bigbasket />
+      <Productpage />
+      <Productdetails />
+      <Createproduct />
+      <Updateproduct />
+    </>
   );
 }
 
